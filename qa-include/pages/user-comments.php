@@ -92,7 +92,7 @@ foreach ($questions as $question) {
 		$usershtml, null, $options);
 }
 
-$qa_content['page_links'] = qa_html_page_links(qa_request(), $start, $pagesize, $count, qa_opt('pages_prev_next'));
+$qa_content['page_links'] = qa_html_page_links(qa_request(), $start, $pagesize, count($questions), qa_opt('pages_prev_next'));
 
 
 // Sub menu for navigation in user pages
